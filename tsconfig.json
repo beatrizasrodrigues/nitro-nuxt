@@ -14,5 +14,13 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-  ]
+  ],
+
+  "compilerOptions": {
+    "types": ["node", "@playwright/test"],
+    "moduleResolution": "node",
+    "target": "esnext",
+    "module": "esnext",
+    "skipLibCheck": true
+  }
 }
