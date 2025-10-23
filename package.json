@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test:unit": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@googlemaps/markerclusterer": "^2.6.2",
@@ -15,7 +17,6 @@
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/image": "^1.11.0",
     "@nuxt/scripts": "^0.12.1",
-    "@nuxt/test-utils": "^3.19.2",
     "@nuxt/ui": "^4.0.1",
     "@unhead/vue": "^2.0.17",
     "better-sqlite3": "^12.4.1",
@@ -28,6 +29,7 @@
     "vuetify": "^3.9.0-beta.1"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^3.19.1",
     "@playwright/test": "^1.55.1",
     "@types/estree": "^1.0.8",
     "@types/geojson": "^7946.0.16",
@@ -35,6 +37,11 @@
     "@types/mdast": "^4.0.4",
     "@types/node": "^24.7.0",
     "@types/unist": "^3.0.3",
-    "@types/web-bluetooth": "^0.0.21"
+    "@types/web-bluetooth": "^0.0.21",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^17.6.3",
+    "playwright": "^1.56.0",
+    "playwright-core": "^1.56.0",
+    "vitest": "^3.2.4"
   }
 }

@@ -1,6 +1,6 @@
 // Getting user through its id
 
-import { addRecentUser, getUser } from "~~/server/utils/users"
+import { addRecentUser, getUser } from "../../utils/users"
 
 export default defineEventHandler(async (event) => {
   const id = getRouterParam(event, 'id')

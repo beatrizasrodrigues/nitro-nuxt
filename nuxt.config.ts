@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   // srcDir: 'app/',
   // serverDir: 'server',
 
+  // runtimeConfig: {
+  //   public: {
+  //     apiBase: 'http://localhost:3000', 
+  //   },
+  // },
+
   app: {
     head: {
       htmlAttrs: {
@@ -18,11 +24,11 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/test-utils',
+    '@nuxt/test-utils/module',
     '@nuxt/ui'
   ],
 
-  css: ['vuetify/styles'],
+  css: ['vuetify/styles', '~/assets/css/main.css'],
   build: {
     transpile: ['vuetify']
   }

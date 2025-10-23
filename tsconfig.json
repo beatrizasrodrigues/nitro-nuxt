@@ -21,6 +21,6 @@
     "moduleResolution": "node",
     "target": "esnext",
     "module": "esnext",
-    "skipLibCheck": true
+    "esModuleInterop": true
   }
 }

@@ -1,6 +1,6 @@
 // Caching user information
 
-import type { User } from "../../shared/types/users"
+import type { User } from "../types/users"
 import type { H3Event } from 'h3'
 
 export const getUser = defineCachedFunction(async (_event: H3Event, id: string) => {
